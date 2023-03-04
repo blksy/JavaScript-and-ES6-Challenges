@@ -16,5 +16,17 @@ var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
 // Write sumPlusMinus() function here
 
+function sumPlusMinus(array) {
+  let object = {
+    plus: 0,
+    minus: 0,
+  };
+  nums.forEach(num => {
+    if (num > 0) object.plus += num;
+    else if (num < 0) object.minus += num;
+  });
+  return object;
+}
+
 console.log(sumPlusMinus(nums));
 // {plus: 74, minus: -54}
