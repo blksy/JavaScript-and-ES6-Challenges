@@ -9,7 +9,8 @@ Don't change lines 14, 19.
 
 "use strict";
 
-const arr = [1, 2];
+let arr = [1, 2]; //line 19 generates error beacause declaring a const variable means we can't reassign it, 
+//the whole point of having a const variable is to be not able to modify it. The solution is simple, change arr variable from const to let or var
 
 arr.push(3);
 
