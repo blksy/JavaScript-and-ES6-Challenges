@@ -15,6 +15,16 @@ var nums = {
 };
 
 // Write code here
+function sumObjectValues (arr){
+  let sum = 0;
+  for (let i in arr){
+    if(
+    typeof arr[i] === "number"
+    )
+    sum += arr[i];
+  }
+  return sum;
+}
 
 console.log(sumObjectValues(nums));
 //42
